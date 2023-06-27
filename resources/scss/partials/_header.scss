@@ -1,0 +1,25 @@
+.nav__list {
+    list-style: none;
+
+    .nav-list__item {
+        color: black;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 5px solid transparent;
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: #0a7bea;
+            }
+        }
+
+        &.active {
+            color: #0a7bea;
+            border-bottom: 5px solid #0a7bea;
+        }
+    }
+}
