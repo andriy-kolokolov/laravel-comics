@@ -9,5 +9,6 @@
 <body>
     @include('components.header')
     <h1>VIDEOS PAGE CONTENT</h1>
+    @include('components.footer')
 </body>
 </html>

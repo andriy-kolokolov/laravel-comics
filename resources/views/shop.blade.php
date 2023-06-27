@@ -9,5 +9,6 @@
 <body>
     @include('components.header')
     <h1>SHOP PAGE CONTENT</h1>
+    @include('components.footer')
 </body>
 </html>
