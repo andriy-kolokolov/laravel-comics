@@ -7,13 +7,16 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    @include('components.header')
-    @foreach($comics as $comic)
-        <div class="card">
-            <h2>{{ $comic['title'] }}</h2>
-            <p>{{ $comic['description'] }}</p>
-            <!-- Add more card details as needed -->
+        @include('components.header')
+        <div class="comics-wrapper">
+            <div class="comics-container grid container p-5">
+                @foreach($comics as $comic)
+                    <div class="card">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                        <h5 class="text-center mt-2">{{ $comic['title'] }}</h5>
+                    </div>
+                @endforeach
+            </div>
         </div>
-    @endforeach
 </body>
 </html>

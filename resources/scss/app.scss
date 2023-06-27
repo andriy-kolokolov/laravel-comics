@@ -4,8 +4,22 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: crimson;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+
+    .card {
+        background-color: #ddd;
+        padding: 10px;
+    }
 }
+
+.comics-wrapper {
+    background-color: #1c1c1c;
+}
+
+
 
 
